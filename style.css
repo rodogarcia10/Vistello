@@ -1,0 +1,47 @@
+.items-navbar {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(255, 255, 255);
+  background-color: #31572C;
+  font-size:x-large
+}
+.titulo {
+    font-family:"Joan", serif;
+    font-weight: unset;
+}
+.boton-home  {
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.boton-login  {
+    margin-top: 20px;
+    margin-right: 15px;
+}
+.subtitulo {
+font-family:"Joan", serif;
+text-align: center;
+font-weight: unset;
+ font-size:xx-large
+}
+.items-body {
+  color: rgb(255, 255, 255);
+  background-color: #50772df1;
+}
+.botones {
+width: 250px;
+height: 150px;
+border-radius: 17%;
+
+}
+.products{
+  column-count: 3;
+}
+
+.products a{
+  text-decoration: none;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin:23%;
+  font-size:larger ;
+   font-family:"Joan", serif;
+}
