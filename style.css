@@ -1,9 +1,12 @@
+body{
+  background-color: #50772dd7;
+}
 .items-navbar {
   display: flex;
   justify-content: space-between;
   color: rgb(255, 255, 255);
   background-color: #31572C;
-  font-size:x-large
+  font-size:x-large;
 }
 .titulo {
     font-family:"Joan", serif;
@@ -21,27 +24,53 @@
 font-family:"Joan", serif;
 text-align: center;
 font-weight: unset;
- font-size:xx-large
+font-size:230%;
+margin-bottom:unset;
 }
 .items-body {
   color: rgb(255, 255, 255);
-  background-color: #50772df1;
+  
 }
 .botones {
 width: 250px;
 height: 150px;
 border-radius: 17%;
-
 }
 .products{
-  column-count: 3;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 .products a{
   text-decoration: none;
+}
+.products div{
   text-align: center;
   color: rgb(255, 255, 255);
   margin:23%;
   font-size:larger ;
    font-family:"Joan", serif;
+   background-color: #AFC4B0;
+   border-radius: 17%;
+}
+
+.products img{
+  width: 240px;
+  height: 170px;
+}
+footer{
+background-color: #D0D3AC;
+width: 100%;
+bottom: 0;
+left: 0;
+position:fixed;
+
+}
+.redes{
+   display: flex;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+   width: 50px;
+  height: 50px;
 }
