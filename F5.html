@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una descripción breve y clara de tu página web.">
+    <meta name="author" content="Tu Nombre o el de tu Empresa">
+
+    <title>Canchas Vistello</title>
+
+    <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css?family=Joan" rel="stylesheet">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+  <div class="cancha-title">Cancha 1</div>
+
+  <table>
+    <thead>
+  <section class="contenedor-grilla">
+  <h2 class="subtitulo">Disponibilidad de Canchas</h2>
+
+  <div class="cancha-title">Cancha 1</div>
+
+  <table id="grilla">
+    <thead>
+      <tr>
+        <th>Hora</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Sábado</th>
+        <th>Domingo</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-body">
+      <!-- JS generará el contenido aquí -->
+    </tbody>
+  </table>
+</section>
+    </tbody>
+  </table>
+  <script>
+  const horas = [
+    "08:00", "09:00", "10:00", "11:00", "12:00",
+    "13:00", "14:00", "15:00", "16:00", "17:00",
+    "18:00", "19:00", "20:00", "21:00", "22:00"
+  ];
+
+  const dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+
+  const tbody = document.getElementById("tabla-body");
+
+  horas.forEach(hora => {
+    const fila = document.createElement("tr");
+    const celdaHora = document.createElement("td");
+    celdaHora.textContent = hora;
+    fila.appendChild(celdaHora);
+
+    dias.forEach(() => {
+      const celda = document.createElement("td");
+      celda.classList.add("disponible");
+      celda.addEventListener("click", () => {
+        if (celda.classList.contains("disponible")) {
+          celda.classList.remove("disponible");
+          celda.classList.add("ocupado");
+          celda.textContent = "Ocupado";
+        } else {
+          celda.classList.remove("ocupado");
+          celda.classList.add("disponible");
+          celda.textContent = "";
+        }
+      });
+      fila.appendChild(celda);
+    });
+
+    tbody.appendChild(fila);
+  });
+</script>
+
+</body>
+</html>

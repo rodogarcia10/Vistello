@@ -64,13 +64,63 @@ width: 100%;
 bottom: 0;
 left: 0;
 position:fixed;
-
 }
 .redes{
-   display: flex;
+ 
   margin-top: 10px;
   margin-left: 15px;
   margin-bottom: 10px;
    width: 50px;
   height: 50px;
+
 }
+.footer-items{
+  display: unset;
+}
+.contenedor-grilla {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #50772d9f;
+  border-radius: 10px;
+}
+
+.cancha-title {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  font-family: "Joan", serif;
+  margin-bottom: 10px;
+}
+
+#grilla {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#grilla th, #grilla td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  background-color: #afc4b0;
+  font-family: "Joan", serif;
+}
+
+#grilla th {
+  background-color: #31572C;
+  color: white;
+}
+
+#grilla td.disponible {
+  background-color: #d4edda;
+  cursor: pointer;
+}
+
+#grilla td.ocupado {
+  background-color: #f8d7da;
+  color: #721c24;
+  font-weight: bold;
+  cursor: pointer;
+}
+    
